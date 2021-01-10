@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+video {
+    object-fit: cover ;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.hero{
+    /*background: url(use this if you'd prefer using an image for your hero session) center center/cover no-repeat;*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
+
+.hero > h1 {
+    color: #fff;
+    font-size: 60px;
+    margin-top: 100px;
+  }
+  
+  .hero > p {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .hero-btn {
+    margin-top: 32px;
+  }
+  
+  .hero-btn .btn {
+    margin: 6px;
+  }
+  
+  .fa-play-circle {
+    margin-left: 4px;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .hero > h1 {
+      font-size: 50px;
+      margin-top: 150px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero > h1 {
+      font-size: 30px;
+      margin-top: 100px;
+    }
+  
+    .hero> p {
+      font-size: 20px;
+    }
+  
+    .btn-mobile {
+      display: block;
+      text-decoration: none;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .hero > h1 {
+      font-size: 20px;
+      margin-top: 100px;
+    }
+  
+    .hero> p {
+      font-size: 15px;
+    }
+  
+    .btn-mobile {
+      display: block;
+      text-decoration: none;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }

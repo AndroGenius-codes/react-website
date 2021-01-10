@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  } 
+  
+  .home,
+  .gallery,
+  .restaurant,
+  .reservation {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .gallery {
+    background-image: url('components/img/image5.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .restaurant {
+    background-image: url('components/img/image1.jpg');
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
   }
-}
+  
+  .reservation {
+    background-image: url('components/img/img4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  /*
+  @media screen and (max-width: 960px){
+    .reservation,
+     .restaurant, 
+     .gallery{
+       font-size: 70px;
+       background-size: contain;
+       text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .reservation,
+     .restaurant, 
+     .gallery{
+       font-size: 50px;
+       background-size: 100%;
+       text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 480px){
+    .reservation,
+     .restaurant, 
+     .gallery{
+       font-size: 30px;
+       background-size: 100%;
+       text-align: center;
+    }
+  }*/
